@@ -1,0 +1,53 @@
+:root {
+  // @Colors - --color-${color_name}
+
+  --color-white-absolute: #fff;
+  --color-black-absolute: #000;
+
+  // @Easing - --easing-${easing_name}
+  //
+
+  --easing-default: cubic-bezier(0.19, 1, 0.22, 1);
+  --transition-default: all 1s $easing-default;
+
+  // @Layout - --layout-${layout_value}
+  //
+
+  --layout-sm: 768px;
+  --layout-md: 1024px;
+  --layout-lg: 1280px;
+  --layout-xl: 1400px;
+
+  // @Fonts - --font-${font_name}
+  //
+}
+
+html,
+body {
+  min-height: 100vh;
+}
+
+html {
+  cursor: default;
+  overflow-wrap: anywhere;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  color: var(--color-black-absolute);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overscroll-behavior-x: none;
+  -webkit-overflow-scrolling: touch;
+}
+
+.js-focus-visible :focus:not(.focus-visible) {
+  outline: 0 !important;
+  box-shadow: none !important;
+}
+
+#__next {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
