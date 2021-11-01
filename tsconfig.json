@@ -38,6 +38,18 @@
       "styles/*": [
         "./src/styles/*"
       ],
+      "components/*": [
+        "./src/components/*"
+      ],
+      "hooks/*": [
+        "./src/hooks/*"
+      ],
+      "constants/*": [
+        "./src/constants/*"
+      ],
+      "utils/*": [
+        "./src/utils/*"
+      ],
       "types/*": [
         "types/*"
       ]

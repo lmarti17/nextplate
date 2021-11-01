@@ -1,10 +1,7 @@
 import React from 'react'
-// import tw from 'twin.macro'
 import NextHead from 'next/head'
 // import { ThemeProvider } from 'styled-components'
 import { DefaultSeo, DefaultSeoProps } from 'next-seo'
-// import { createGlobalStyle } from 'styled-components'
-// import theme from 'src/styles/theme'
 
 interface Props {}
 
@@ -24,34 +21,6 @@ const globalSeoConfig: DefaultSeoProps = {
     cardType: 'summary_large_image',
   },
 }
-
-// const GlobalStyle = createGlobalStyle`
-//   ${fonts}
-
-//   html,
-//   body {
-//     ${tw`min-h-screen`}
-//   }
-
-//   html {
-//     ${tw`cursor-default`}
-//     overflow-wrap: anywhere;
-//     -webkit-tap-highlight-color: transparent;
-//   }
-
-//   body {
-//     ${tw`text-black antialiased`}
-//   }
-
-//   .js-focus-visible :focus:not(.focus-visible) {
-//     outline: 0 !important;
-//     box-shadow: none !important;
-//   }
-
-//   #__next {
-//     ${tw`min-h-screen flex flex-col`}
-//   }
-// `
 
 const DefaultLayout: React.FC<Props> = ({ children }) => {
   return (
@@ -82,8 +51,8 @@ const DefaultLayout: React.FC<Props> = ({ children }) => {
         {/* @TODO - remove before going live */}
         <meta name="robots" content="noindex,nofollow" key="robots" />
       </NextHead>
-      {/* <ThemeProvider theme={theme}>
-        <GlobalStyle /> */}
+      {/* <ThemeProvider theme={theme}> */}
+
       <div>{children}</div>
       {/* </ThemeProvider> */}
     </>
