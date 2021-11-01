@@ -23,10 +23,10 @@ const GlobalStyle = createGlobalStyle/* scss */ `
   // @Layout
   //
   
-  // --layout-sm: 768px;
-  // --layout-md: 1024px;
-  // --layout-lg: 1280px;
-  // --layout-xl: 1400px;
+  --layout-sm: 768px;
+  --layout-md: 1024px;
+  --layout-lg: 1280px;
+  --layout-xl: 1400px;
 
 
   // @Fonts -
