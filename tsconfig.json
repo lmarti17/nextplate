@@ -38,6 +38,9 @@
       "styles/*": [
         "./src/styles/*"
       ],
+      "ctx/*": [
+        "./src/ctx/*"
+      ],
       "components/*": [
         "./src/components/*"
       ],
