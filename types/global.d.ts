@@ -7,3 +7,5 @@ declare module '*.css' {
   const payload: string
   export default payload
 }
+
+export type tBreakpoint = 'sm' | 'md' | 'lg' | 'xl'

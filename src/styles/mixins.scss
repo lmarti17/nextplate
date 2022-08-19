@@ -1,0 +1,22 @@
+
+/*
+  Media Queries
+*/
+
+@mixin up($bp){
+  @media only screen and (min-width: $bp){
+    @content;
+  }
+}
+
+@mixin down($bp){
+  @media only screen and (max-width: $bp){
+    @content;
+  }
+}
+
+@mixin between($bpMin, $bpMax){
+  @media only screen and (min-width: $bpMin) and (max-width: $bpMax){
+    @content
+  }
+}

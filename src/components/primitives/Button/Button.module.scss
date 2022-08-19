@@ -1,0 +1,10 @@
+@import "/src/styles/mixins";
+@import "/src/styles/variables.scss";
+
+.submit{
+  background-color: var(--color-blue);
+
+  @include up($layout-md){
+    background-color: var(--color-red);
+  }
+}

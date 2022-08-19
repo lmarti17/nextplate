@@ -41,6 +41,12 @@
       "components/*": [
         "./src/components/*"
       ],
+      "primitives/*": [
+        "./src/components/primitives/*"
+      ],
+      "modules/*": [
+        "./src/components/modules/*"
+      ],
       "hooks/*": [
         "./src/hooks/*"
       ],

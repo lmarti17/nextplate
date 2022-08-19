@@ -1,0 +1,14 @@
+// Layout Variables
+
+$layout-sm: 768px;
+$layout-md: 1024px;
+$layout-lg: 1280px;
+$layout-xl: 1400px;
+
+
+:export {
+  layout_sm: $layout_sm;
+  layout_md: $layout_md;
+  layout_lg: $layout_lg;
+  layout_xl: $layout_xl;
+}

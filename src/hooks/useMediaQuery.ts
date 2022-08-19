@@ -1,13 +1,12 @@
 import { useEffect, useState } from 'react'
-import theme, { iTheme } from 'styles/theme'
-
-type Breakpoint = keyof iTheme['screens']
+import { theme } from 'styles/theme'
+import { tBreakpoint } from 'types/global'
 
 /**
  * Returns either `true` or `false` whether the query matches.
  * Returns `null` if we are server-side rendering and have no access to the `window`.
  */
-const useMediaQuery = (bp: Breakpoint) => {
+const useMediaQuery = (bp: tBreakpoint) => {
   const query = `(min-width: ${theme.screens[bp]})`
 
   const [matches, setMatches] = useState(() => {

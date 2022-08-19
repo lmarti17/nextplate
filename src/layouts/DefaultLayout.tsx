@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropsWithChildren } from 'react'
 import NextHead from 'next/head'
 // import { ThemeProvider } from 'styled-components'
 import { DefaultSeo, DefaultSeoProps } from 'next-seo'
@@ -22,7 +22,7 @@ const globalSeoConfig: DefaultSeoProps = {
   },
 }
 
-const DefaultLayout: React.FC<Props> = ({ children }) => {
+const DefaultLayout: React.FC<Props & PropsWithChildren> = ({ children }) => {
   return (
     <>
       <DefaultSeo {...globalSeoConfig} />

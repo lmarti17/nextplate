@@ -1,17 +1,8 @@
-export type iTheme = {
+export const theme = {
   screens: {
-    '--layout-sm': string
-    '--layout-md': string
-    '--layout-lg': string
-    '--layout-xl': string
-  }
-}
-const theme: iTheme = {
-  screens: {
-    '--layout-sm': '768px',
-    '--layout-md': '1024px',
-    '--layout-lg': '1280px',
-    '--layout-xl': '1400px',
+    sm: '768px',
+    md: '1024px',
+    lg: '1280px',
+    xl: '1400px',
   },
 }
-export default theme
